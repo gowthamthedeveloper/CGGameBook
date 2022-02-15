@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/textViewPlayerName"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_50"
+        android:text="Player Name"
+        android:layout_marginLeft="@dimen/dp_15"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/dp_18"
+        android:textColor="@color/black"
+        android:fontFamily="@font/opensans_semibold"
+        />
+
+
+    <TextView
+        android:id="@+id/textViewPointTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_50"
+        android:text="0"
+        android:layout_marginLeft="@dimen/dp_20"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/dp_18"
+        android:layout_marginRight="@dimen/dp_15"
+        android:fontFamily="@font/opensans_bold"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/textViewPlayerPoints"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:text="Points"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPlayerName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/dp_15"
+        android:textColor="@color/black"/>
+
+     <View
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/dp_1"
+         app:layout_constraintTop_toBottomOf="@+id/textViewPlayerPoints"
+         android:background="@color/black_op_20"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
